@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Rental</title>
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        body {
+            background:  url(https://www.google.com/url?sa=i&url=https%3A%2F%2Fberrizdesign.com%2Fbeautiful-landscape%2F&psig=AOvVaw1_RXO_qSwHgADQEG7linha&ust=1747406509042000&source=images&cd=vfe&opi=89978449&ved=0CBgQjhxqFwoTCNDLgNjapY0DFQAAAAAdAAAAABAL)
+            font-family: 'Roboto', Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            line-height: 1.6;
+        }
+
+        header { 
+            background-image: url('https://i.pinimg.com/736x/02/78/1f/02781fbbe5a9f1235935638fb02bd3df.jpg');
+                        background-size: cover;
+                        background-position: center;
+            color: white;
+            padding: 1rem 0;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin: 0 10px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+
+        main {
+            padding: 1rem;
+        }
+
+        footer {
+            text-align: center;
+            padding: 1rem 0;
+            background-color: lightblue;
+            color: white;
+            margin-top: 2rem;
+        }
+
+        .form-container {
+            background: white;
+            padding: 1rem;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            max-width: 500px;
+            margin: 2rem auto;
+        }
+
+        .form-container h2 {
+            margin-bottom: 1rem;
+        }
+
+        .form-container label {
+            display: block;
+            margin-bottom: 0.5rem;
+        }
+
+        .form-container input, .form-container select, .form-container button {
+            width: 100%;
+            padding: 0.5rem;
+            margin-bottom: 1rem;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .form-container button {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        .form-container button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to La Maj Home Rentals</h1>
+        <nav>
+            <ul>
+                <img src="images/logo3.avif" alt="Logo"width="60" height="60"> 
+                <li><a href="index.html">Home</a></li>
+                <li><a href="abous us.html">About us</a></li>
+                <li><a href="accomodation.html">Accommodation</a></li>
+                <li><a href="book.html">book</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="feedback.html">feedback</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="form-container">
+            <h2>Book a Room</h2>
+            <form id="bookingForm">
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="roomType">Room Type:</label>
+                <select id="roomType" name="roomType" required>
+                    <option value="single">Single Room</option>
+                    <option value="double">Double Room</option>
+                    <option value="suite">Suite</option>
+                </select>
+
+                <label for="checkIn">Check-In Date:</label>
+                <input type="date" id="checkIn" name="checkIn" required>
+
+                <label for="checkOut">Check-Out Date:</label>
+                <input type="date" id="checkOut" name="checkOut" required>
+
+                <button type="submit">Book Now</button>
+            </form>
+        </div>
+
+        <div class="form-container">
+            <h2>Cancel Booking</h2>
+            <form id="cancelForm">
+                <label for="bookingId">Booking ID:</label>
+                <input type="text" id="bookingId" name="bookingId" required>
+
+                <button type="submit">Cancel Booking</button>
+            </form>
+        </div>
+
+        <div class="form-container">
+            <h2>Get Better Room Options</h2>
+            <form id="optionsForm">
+                <label for="preferences">Your Preferences:</label>
+                <input type="text" id="preferences" name="preferences" placeholder="e.g., sea view, king bed" required>
+
+                <button type="submit">Find Options</button>
+            </form>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 La Maj Home Rentals. All rights reserved.</p>
+    </footer>
+</body>
+</html> 

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Rental</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f4f4f4;
+    }
+
+    header {
+        background-image: url('https://i.pinimg.com/736x/02/78/1f/02781fbbe5a9f1235935638fb02bd3df.jpg');
+                        background-size: cover;
+                        background-position: center;
+        color: white;
+        padding: 1rem 0;
+        text-align: center;
+    }
+
+    .container {
+            max-width: 600px;
+            margin: 50px auto;
+            background: #fff;
+            padding: 20px;
+        border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+text-align: center;
+color: #333;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+}
+        label {
+            margin: 10px 0 5px;
+            font-weight: bold;
+        }
+        input, textarea, button {
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 16px;
+        }
+        button {
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+    footer {
+            text-align: center;
+            padding: 1rem 0;
+            background-color:lightblue;
+            color: white;
+            margin-top: 2rem;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>La Maj Home Rentals</h1>
+        <nav>
+            <ul>
+                <img src="images/logo3.avif" alt="Logo"width="60" height="60"> 
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about us.html">About us</a></li>
+                <li><a href="accomodation.html">Accommodation</a></li>
+                <li><a href="book.html">book</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="feedback.html">feedback</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2>Find Your Perfect Rental Home</h2>
+        <p>Browse our listings to find the perfect place to call home.</p>
+    </main>
+
+    <div class="container">
+        <h1>Feedback</h1>
+        <form action="/submit-feedback" method="POST">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Your name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Your email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="5" placeholder="Your feedback" required></textarea>
+
+            <button type="submit">Submit Feedback</button>
+        </form>
+        <h2>other people reviews</h2>
+        <div class="review">
+            <p><strong>John Doe:</strong> Great experience! The house was clean and well-maintained.</p>
+            <p><strong>Jane Smith:</strong> Loved the location! Close to everything we needed.</p>
+            <p><strong>Emily Johnson:</strong> The booking process was smooth and easy. Highly recommend!</p>
+        </div>
+
+
+
+    </div>
+    <footer>
+        <p>&copy; 2023 La Maj Home Rentals. All rights reserved.</p>
+    </footer>
+</body>
+</html>

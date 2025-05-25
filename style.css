@@ -1,0 +1,35 @@
+  nav {
+            background-color: lightblue;
+            overflow: hidden;
+            
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+
+        nav ul li {
+            flex: 1;
+        }
+
+        nav ul li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 20px;
+            text-decoration: white;
+        }
+
+        nav ul li a:hover {
+            background-color: #575757;
+        }
+        img{ 
+            transition: transform 0.2s ease-in-out;
+
+        }
+        img:hover {
+            transform: scale(1.1);
+        } 

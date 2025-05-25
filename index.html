@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La Mag Home Rental</title>
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+         header {
+                        background-image: url('https://i.pinimg.com/736x/02/78/1f/02781fbbe5a9f1235935638fb02bd3df.jpg');
+                        background-size: cover;
+                        background-position: center;
+            color: white;
+            padding: 1rem 0;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+        }
+
+        nav ul li {
+            display: inline;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .search-bar {
+            margin: 1rem auto;
+            text-align: center;
+        }
+
+        .search-bar input[type="text"] {
+            width: 60%;
+            padding: 0.5rem;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+
+        .search-bar button {
+            padding: 0.5rem 1rem;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        .search-bar button:hover {
+            background-color: #45a049;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 1rem;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            justify-content: center;
+        }
+
+    .property {
+            flex: 1 1 calc(33.333% - 1rem);
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 1rem;
+            background-color: #fff;
+        }
+
+        .property img {
+            max-width: 100%;
+            border-radius: 8px;
+            margin-bottom: 1rem;
+        }
+
+        .property-details h2 {
+            margin: 0;
+            color: #333;
+        }
+
+        .property-details p {
+            margin: 0.5rem 0;
+            color: #666;
+        }
+
+        .property-details .price {
+            font-size: 1.2rem;
+            color: #4CAF50;
+            font-weight: bold;
+        }
+
+        footer {
+            text-align: center;
+            padding: 1rem 0;
+            background-color: lightblue;
+            color: white;
+            margin-top: 2rem;
+        }
+        
+    </style> 
+</head>
+<body>
+    <header>
+        <h1>La Maj Home Rentals</h1>
+        <nav>
+            <ul>
+                <img src="images/logo3.avif" alt="Logo"width="60" height="60"> 
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about us.html">About us</a></li>
+                <li><a href="accomodation.html">Accommodation</a></li>
+                <li><a href="book.html">book</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="feedback.html">feedback</a></li>
+            </ul>
+        </nav>
+        <div class="search-bar">
+            <input type="text" placeholder="Search for properties...">
+            <button>Search</button>
+        </div>
+    </header>
+    <main>
+        <h2 style="text-align: center;">Find Your Perfect Rental Home</h2>
+        <p style="text-align: center;">Browse our listings to find the perfect place to call home.</p>
+    </main>
+
+    <div class="container">
+        <div class="property">
+            <img src="images/house 1.jpeg" alt="House 1">
+            <div class="property-details">
+                <h2>Cozy Family Home</h2>
+                <p>3 Beds • 2 Baths • 1,500 sqft</p>
+                <p class="price">P1,800/month</p>
+            </div>
+        </div>
+        <div class="property">
+            <img src="images/house2.jpg" alt="House 2">
+            <div class="property-details">
+                <h2>Modern Apartment</h2>
+                <p>2 Beds • 1 Bath • 900 sqft</p>
+                <p class="price">P1,200/month</p>
+            </div>
+        </div>
+        <div class="property">
+            <img src="images/img4.webp" alt="House 3">
+            <div class="property-details">
+                <h2>Luxury Villa</h2>
+                <p>5 Beds • 4 Baths • 3,500 sqft</p>
+                <p class="price">P5,000/month</p>
+            </div>
+        </div>
+        <div class="property">
+            <img src="images/img2.jpg" alt="House 4">
+            <div class="property-details">
+                <h2>Charming Cottage</h2>
+                <p>2 Beds • 1 Bath • 1,200 sqft</p>
+                <p class="price">P1,500/month</p>
+            </div>
+        </div>
+        <div class="property">
+            <img src="images/img3.jpeg" alt="House 5">
+            <div class="property-details">
+                <h2>Urban Studio</h2>
+                <p>1 Bed • 1 Bath • 600 sqft</p>
+                <p class="price">P900/month</p>
+            </div>
+        </div>
+        <div class="property">
+            <img src="images/img4.jpg" alt="House 6">
+            <div class="property-details">
+                <h2>Suburban Retreat</h2>
+                <p>4 Beds • 3 Baths • 2,800 sqft</p>
+                <p class="price">P2,500/month</p>
+            </div>
+        </div>
+        <iframe src="https://www.youtube.com/embed/zumJJUL_ruM?si=l_EH4d4d_OmTJaHf"></iframe>
+        <iframe src="https://www.youtube.com/embed/zumJJUL_ruM?si=l_EH4d4d_OmTJaHf"></iframe>
+        <iframe src="https://www.youtube.com/embed/zumJJUL_ruM?si=l_EH4d4d_OmTJaHf"></iframe>
+    </div>
+
+    <footer> 
+        <p>&copy; 2023 La Maj Home Rentals. All rights reserved.</p>
+    </footer>
+</body>
+</html>
